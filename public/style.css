@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --blue: #1e90ff;
+  --notification: rgb(241, 69, 78);
+}
+
+body {
+  overflow-x: hidden;
+}

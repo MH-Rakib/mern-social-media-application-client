@@ -1,0 +1,74 @@
+.navabrContainer {
+  background-color: var(--blue);
+  padding: 12px;
+}
+.brandLogo h2 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+.search {
+  background-color: #fff;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+.search.searchIcon {
+  color: #333;
+}
+
+.search input {
+  border: none;
+  width: 90%;
+  padding: 10px;
+}
+.search input:focus {
+  outline: none;
+}
+
+.navbarIcons {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+}
+
+.notificationNumber {
+  position: absolute;
+  background-color: var(--notification);
+  top: -25%;
+  left: 55%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.notificationNumber span {
+  font-size: 9px;
+  color: #fff;
+}
+
+.navbarIcons .icon {
+  color: #fff !important;
+  font-size: 30px !important;
+}
+
+.userProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userProfile span {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.profileImage {
+  width: 40px;
+  margin: 0 15px;
+  border-radius: 50%;
+}

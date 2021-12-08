@@ -1,6 +1,10 @@
 .navabrContainer {
   background-color: var(--blue);
   padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 0 5px 5px #0000002f;
 }
 .brandLogo h2 {
   color: #fff;

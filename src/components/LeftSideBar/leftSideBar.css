@@ -2,6 +2,7 @@
   height: calc(100vh - 68px);
   overflow-y: scroll;
   position: sticky;
+  top: 68px;
 }
 
 ::-webkit-scrollbar {

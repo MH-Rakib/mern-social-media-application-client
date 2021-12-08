@@ -1,0 +1,103 @@
+.rightBarWrapper {
+  padding: 15px 0;
+  padding-right: 15px;
+  height: calc(100vh - 68px);
+  overflow-y: scroll;
+  position: sticky;
+  top: 68px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+
+.birthdayUpdate {
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.birthdayUpdate .image {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.birthdayUpdate .text {
+  margin: 0;
+  font-size: 16px;
+}
+.birthdayUpdate .person {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sponsored img {
+  border-radius: 5px;
+}
+.sponsoredHeading,
+.contactsHeading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.allContacts {
+}
+
+.allContacts .image {
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.allContacts .contactName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+}
+
+.friendsContainer {
+  margin-bottom: 20px;
+}
+
+.friends {
+}
+
+.friends img {
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.089);
+}
+
+.friendslistHeader {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.aboutUserheader {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.informations {
+  margin-bottom: 25px;
+}
+
+.informationsIcon {
+  margin-right: 15px;
+  font-size: 30px !important;
+  color: #444;
+}
+
+.informations span {
+  font-size: 18px;
+}

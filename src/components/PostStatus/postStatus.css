@@ -1,0 +1,32 @@
+.postStatusWrapper {
+  padding: 20px;
+  box-shadow: 0 0 7px 5px rgb(224, 224, 224);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.postStatusUserImage {
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.postStatusInput {
+  width: calc(100% - 50px);
+  padding: 14px 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.postStatusInput:focus {
+  outline: none;
+}
+
+.postStatusButton button {
+  background-color: var(--blue);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+}

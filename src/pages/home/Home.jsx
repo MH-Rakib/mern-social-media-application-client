@@ -12,19 +12,13 @@ const Home = () => {
         <NavigationBar></NavigationBar>
         <Row>
           <Col sm={3}>
-            <div>
-              <LeftSideBar></LeftSideBar>
-            </div>
+            <LeftSideBar></LeftSideBar>
           </Col>
-          <Col sm={5}>
-            <div>
-              <NewsFeed></NewsFeed>
-            </div>
+          <Col sm={6}>
+            <NewsFeed></NewsFeed>
           </Col>
-          <Col sm={4}>
-            <div>
-              <RightSideBar></RightSideBar>
-            </div>
+          <Col sm={3}>
+            <RightSideBar></RightSideBar>
           </Col>
         </Row>
       </div>

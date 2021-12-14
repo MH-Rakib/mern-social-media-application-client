@@ -12,11 +12,11 @@ const Posts = () => {
   return (
     <div className="postsWrapper">
       <div className="postsTop d-flex align-items-center justify-content-between">
-        <div className="left d-flex align-items-center">
+        <div className="postsTopLeft d-flex align-items-center">
           <img src={userImage} className="userImage img-fluid" alt="" />
           <span className="username">Dua Lipa</span>
         </div>
-        <div className="right d-flex align-items-center">
+        <div className="postsTopRight d-flex align-items-center">
           <span className="time">Posted 13 minutes ago</span>
           <div className="icon">
             <MoreVertIcon />
@@ -31,7 +31,7 @@ const Posts = () => {
         <img src={postImage} className="img-fluid" alt="" />
       </div>
       <div className="postsBottom mt-3 d-flex align-items-center justify-content-between">
-        <div className="left d-flex align-items-center">
+        <div className="postsBottomLeft d-flex align-items-center">
           {!liked ? (
             <FavoriteBorderIcon
               className="icon"
@@ -42,7 +42,7 @@ const Posts = () => {
           )}
           <span>13 People loved it.</span>
         </div>
-        <div className="right d-flex align-items-center">
+        <div className="postsBottomRight d-flex align-items-center">
           <InsertCommentIcon className="icon" />
           <span>5 Comments</span>
         </div>

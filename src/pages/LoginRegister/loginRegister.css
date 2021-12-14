@@ -1,0 +1,79 @@
+.wrapper {
+  border-radius: 5px;
+  background-color: var(--blue);
+  box-shadow: 0 0 10px 4px #13131334;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  width: 400px;
+  padding: 25px;
+}
+
+.left p {
+  color: #f0f0f0;
+}
+
+.right {
+  background-color: #fff;
+}
+
+.left h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.right input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  margin: 15px 0;
+}
+
+.loginRegisterHeading {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 20px !important;
+  text-align: center;
+}
+
+.right .button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--blue);
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+.right .buttonDisabled {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(216, 216, 216);
+  color: var(--blue);
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 15px 0;
+  cursor: not-allowed !important;
+}
+
+.loginRegistrationPageFooterText {
+  font-size: 16px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.loginRegistrationPageFooterText span {
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: 500;
+}

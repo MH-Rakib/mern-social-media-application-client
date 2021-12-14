@@ -12,6 +12,7 @@ import userImage101 from "../../assets/person/101.jpg";
 import userImage12 from "../../assets/person/12.jpg";
 import userImage13 from "../../assets/person/13.jpg";
 import userImage14 from "../../assets/person/14.jpg";
+import { Link } from "react-router-dom";
 
 const RightSideBar = ({ profile }) => {
   return (
@@ -38,7 +39,7 @@ const RightSideBar = ({ profile }) => {
       </div>
       <hr />
       <div className="allFriendslist">
-        <p className="friendslistHeader">Your Friends</p>
+        <p className="friendslistHeader">Followers</p>
         <Row>
           <Col sm={4} className="friendsContainer">
             <div className="friends">
@@ -73,6 +74,7 @@ const RightSideBar = ({ profile }) => {
         </Row>
       </div>
       <hr />
+
       <div className="birthdayUpdate d-flex align-items-center mb-3">
         <img className="image img-fluid" src={birthdatImage} alt="" />
         <p className="text">
@@ -94,47 +96,41 @@ const RightSideBar = ({ profile }) => {
       )}
 
       <hr />
-      <p className="contactsHeading">Contacts</p>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage11} alt="" />
-        <p className="contactName">Mahmudul Hasan</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage101} alt="" />
-        <p className="contactName">Mehedi Hasan</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage12} alt="" />
-        <p className="contactName">Ibrahim Abdullah</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage13} alt="" />
-        <p className="contactName">Moinul Hasan</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage14} alt="" />
-        <p className="contactName">Borhan Uj Jamil</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage11} alt="" />
-        <p className="contactName">Mahmudul Hasan</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage101} alt="" />
-        <p className="contactName">Mehedi Hasan</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage12} alt="" />
-        <p className="contactName">Ibrahim Abdullah</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage13} alt="" />
-        <p className="contactName">Moinul Hasan</p>
-      </div>
-      <div className="allContacts d-flex align-items-center mb-4">
-        <img className="image img-fluid" src={userImage14} alt="" />
-        <p className="contactName">Borhan Uj Jamil</p>
-      </div>
+      {profile && (
+        <>
+          <p className="contactsHeading">Conversations</p>
+          <Link to={"/profile/username"} style={{ textDecoration: "none" }}>
+            <div className="allContacts d-flex align-items-center mb-4">
+              <img className="image img-fluid" src={userImage11} alt="" />
+              <p className="contactName">Mahmudul Hasan</p>
+            </div>
+          </Link>
+          <Link to={"/profile/username"} style={{ textDecoration: "none" }}>
+            <div className="allContacts d-flex align-items-center mb-4">
+              <img className="image img-fluid" src={userImage101} alt="" />
+              <p className="contactName">Mehedi Hasan</p>
+            </div>
+          </Link>
+          <Link to={"/profile/username"} style={{ textDecoration: "none" }}>
+            <div className="allContacts d-flex align-items-center mb-4">
+              <img className="image img-fluid" src={userImage12} alt="" />
+              <p className="contactName">Ibrahim Abdullah</p>
+            </div>
+          </Link>
+          <Link to={"/profile/username"} style={{ textDecoration: "none" }}>
+            <div className="allContacts d-flex align-items-center mb-4">
+              <img className="image img-fluid" src={userImage13} alt="" />
+              <p className="contactName">Moinul Hasan</p>
+            </div>
+          </Link>
+          <Link to={"/profile/username"} style={{ textDecoration: "none" }}>
+            <div className="allContacts d-flex align-items-center mb-4">
+              <img className="image img-fluid" src={userImage14} alt="" />
+              <p className="contactName">Borhan Uj Jamil</p>
+            </div>
+          </Link>
+        </>
+      )}
     </div>
   );
 };

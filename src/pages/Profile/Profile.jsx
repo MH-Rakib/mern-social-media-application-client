@@ -13,7 +13,7 @@ const Profile = () => {
     <div>
       <div className="bodyContentWrapper">
         <NavigationBar></NavigationBar>
-        <div className="mx-sm-5">
+        <div className="">
           <Row>
             <Col sm={3}>
               <LeftSideBar></LeftSideBar>

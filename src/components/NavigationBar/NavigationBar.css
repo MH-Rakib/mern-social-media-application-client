@@ -76,3 +76,9 @@
   margin: 0 15px;
   border-radius: 50%;
 }
+
+.logout-icon {
+  color: #fff !important;
+  font-size: 30px !important;
+  cursor: pointer;
+}
